@@ -1,7 +1,5 @@
 <?php
 
-error_reporting(E_ALL & ~E_NOTICE);
-
 /**
  * Todo-List:
  * - Support for more than the current day

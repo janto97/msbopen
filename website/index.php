@@ -1,4 +1,13 @@
-<?php
+<html>
+<head>
+<link rel="stylesheet" href="open.css">
+</head>
+
+<body>
+
+
+<?php 
+
 
 /**
  * Todo-List:
@@ -72,9 +81,26 @@ if(
 if(isMsbOpen($fileContent))
 {
     // output if msb is open
+    echo '<span class="css-ampel ampelgruen"><span></span></span>' . "\n" ;    
+    echo '<p></p>';
     echo "Der Makerspace ist offen bis " . $fileContent;
+    echo '<p>Das Modul ist noch in der Testphase</p>' . "\n";
+
 }
 else
 {
+    echo '<span class="css-ampel ampelrot"></span>' . "\n" ;    
+//    echo "Der Makerspace ist geschlossen" . "\n" ; 
+    echo '<p>Das Modul ist noch in der Testphase</p>' . "\n" ;
+
+   
     // Things to do, when msb is currently not open
 }
+
+// echo '<span class="css-ampel ampelgruen"><span></span></span>' ;
+
+
+?>
+
+</body>
+</html>
